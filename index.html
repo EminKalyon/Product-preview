@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      padding: 0px;
+    }
+    body{
+      background-color: #F3EBE4;
+    }
+    #itemContainer{
+      display: block;
+      border-radius: 3%;
+      display: flex;
+      float: left;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -300px;
+      margin-top: -190px;
+    }
+    #buy{
+      position: relative;
+      border-radius: 0px 10px 10px 0px;
+      background-color: white;
+      background-size: cover;
+      text-align: center;
+      display: block;
+      color:  black;
+      width: 275px; 
+    }
+    button{
+      background-color: #3D8066;
+      font-size: 13px;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      margin-top: 50px;
+      width: 215px;
+      height: 45px;
+    }
+    button:hover{
+      background-color: #1A6044;
+      cursor: pointer;
+    }
+    div #left-img{
+      position: relative;
+      border-radius: 10px 0px 0px 10px;
+    }
+    #img-sepet{
+      width: 12px;
+      top: 25px;
+    }
+    #container{
+      text-align: left;
+      background-color: white;
+      width: 215px;
+      height: 320px;
+      margin-top: 12px;
+      margin-left: 30px;
+    }
+    span{
+      margin-bottom: 23px;
+    }
+  </style>
+</head>
+<body>
+<div id="itemContainer">
+  <div id="images">
+    <img id="left-img" src="images/resim1.jpg" width="275px" style="display: block; margin: auto;">
+  </div>
+  <div id="buy">
+    <div id="container">
+        <span>perfume</span>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+ 
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+
+        <span style="color:#3C8166; font-size: 32px;"><b>$149.99<b></span>
+        <span style="color:#D0D0D2;"><strike>$169.99</strike></span>  
+      <div>
+        <button>
+          <img id="img-sepet" src="images/icon-cart.svg">
+          <b>Add to Cart</b></button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
